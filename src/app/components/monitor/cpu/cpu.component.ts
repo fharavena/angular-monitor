@@ -41,14 +41,14 @@ export class CpuComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.gethappcpu();
-    setInterval(() => {
-      this.hora = [];
-      this.ram = [];
-      this.cpu = [];
-      this.avg = [];
-      this.gethappcpu();
-    }, 60000); //cada un minuto
+    // this.gethappcpu();
+    // setInterval(() => {
+    //   this.hora = [];
+    //   this.ram = [];
+    //   this.cpu = [];
+    //   this.avg = [];
+    //   this.gethappcpu();
+    // }, 60000); //cada un minuto
   }
 
   fulldatachart() {

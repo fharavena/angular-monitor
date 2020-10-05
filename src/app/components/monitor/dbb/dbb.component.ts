@@ -43,14 +43,14 @@ export class DbbComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.gethappdbb();
-    setInterval(() => {
-      this.hora = [];
-      this.ram = [];
-      this.cpu = [];
-      this.avg = [];
-      this.gethappdbb();
-    }, 60000); //each minute
+    // this.gethappdbb();
+    // setInterval(() => {
+    //   this.hora = [];
+    //   this.ram = [];
+    //   this.cpu = [];
+    //   this.avg = [];
+    //   this.gethappdbb();
+    // }, 60000); //each minute
   }
 
   fulldatachart() {

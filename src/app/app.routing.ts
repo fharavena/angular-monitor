@@ -6,10 +6,12 @@ import { HomeComponent } from './components/home/home.component';
 import { ErrorComponent } from './components/error/error.component';
 
 import { AuthGuard } from './shared/guards/auth.guard'
+import { MaquetaComponent } from './components/test/maqueta/maqueta.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent, canActivate: [AuthGuard] },
   { path: 'inicio', component: HomeComponent, canActivate: [AuthGuard]  },
+  { path: 'maqueta', component: MaquetaComponent, canActivate: [AuthGuard]  },
   { path: 'login', component: LoginComponent },
   { path: 'logout/:sure', component: LoginComponent },
   { path: '**', component: ErrorComponent },

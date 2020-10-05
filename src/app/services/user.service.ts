@@ -46,8 +46,6 @@ export class UserService {
       "application/x-www-form-urlencoded"
     );
 
-
     return this._http.get(this.url + "caller.php", { params: params });
-
   }
 }

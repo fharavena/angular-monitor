@@ -22,6 +22,9 @@ import { RadarChartComponent } from './components/graph/radar-chart/radar-chart.
 import { DoughnutChartComponent } from './components/graph/doughnut-chart/doughnut-chart.component';
 import { DbbComponent } from './components/monitor/dbb/dbb.component';
 import { UsermoodleComponent } from './components/monitor/usermoodle/usermoodle.component';
+import { MaquetaComponent } from './components/test/maqueta/maqueta.component';
+import { SensorComponent } from './components/monitor/sensor/sensor.component';
+import { UserperdayComponent } from './components/monitor/userperday/userperday.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +45,9 @@ import { UsermoodleComponent } from './components/monitor/usermoodle/usermoodle.
     DoughnutChartComponent,
     DbbComponent,
     UsermoodleComponent,
+    MaquetaComponent,
+    SensorComponent,
+    UserperdayComponent,
   ],
   imports: [
     BrowserModule,
