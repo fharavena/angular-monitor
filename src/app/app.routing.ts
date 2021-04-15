@@ -9,12 +9,19 @@ import { AuthGuard } from './shared/guards/auth.guard'
 import { MaquetaComponent } from './components/test/maqueta/maqueta.component';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent, canActivate: [AuthGuard] },
-  { path: 'inicio', component: HomeComponent, canActivate: [AuthGuard]  },
-  { path: 'maqueta', component: MaquetaComponent, canActivate: [AuthGuard]  },
-  { path: 'login', component: LoginComponent },
-  { path: 'logout/:sure', component: LoginComponent },
+  { path: '', component: HomeComponent},
+  { path: 'inicio', component: HomeComponent },
+  { path: 'maqueta', component: MaquetaComponent },
+  //{ path: 'login', component: LoginComponent },
+  //{ path: 'logout/:sure', component: LoginComponent },
   { path: '**', component: ErrorComponent },
+
+  // { path: '', component: HomeComponent, canActivate: [AuthGuard] },
+  // { path: 'inicio', component: HomeComponent, canActivate: [AuthGuard]  },
+  // { path: 'maqueta', component: MaquetaComponent, canActivate: [AuthGuard]  },
+  // { path: 'login', component: LoginComponent },
+  // { path: 'logout/:sure', component: LoginComponent },
+  // { path: '**', component: ErrorComponent },
 ];
 
 export const appRoutingProviders: any[] = [];

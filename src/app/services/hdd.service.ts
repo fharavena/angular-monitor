@@ -29,7 +29,9 @@ export class HddService {
       "Content-Type",
       "application/x-www-form-urlencoded"
     );
+    console.log(this.url+ "caller.php");
+    
 
-    return this._http.get(this.url + "caller.php", { params: params });
+    return this._http.get(this.url + "monitorcpu.php", { params: params });
   }
 }

@@ -28,6 +28,6 @@ export class SensoresService {
       "application/x-www-form-urlencoded"
     );
 
-    return this._http.get(this.url + "caller.php", { params: params });
+    return this._http.get(this.url + "monitorcpu.php", { params: params });
   }
 }
